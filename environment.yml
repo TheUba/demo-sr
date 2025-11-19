@@ -2,20 +2,45 @@ name: voila
 channels:
   - conda-forge
 dependencies:
+  # --- Core Python ---
   - python=3.10
-  - ipywidgets
-  - ipykernel
-  - pandas
   - pip
-  - bokeh
-  - bqplot
+
+  # --- Jupyter / Voila ---
+  - ipykernel
+  - ipywidgets
   - ipympl=0.9.2
   - jupyterlab-fasta
-  - matplotlib
+
+  # --- Ciencia de datos ---
+  - pandas=2.2.3
+  - numpy=2.2.6
   - scipy
+  - matplotlib=3.10.3
+  - seaborn=0.13.2
+  - networkx
+  - scikit-image
+  - scikit-fuzzy=0.5.0
+
+  # --- Visualizaciones interacticas ---
+  - bokeh
+  - bqplot
   - vega_datasets
   - ipyvolume
 
+  # --- Imagen / video ---
+  - imageio
+
+  # --- PyTorch (CPU) ---
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # --- Instalar via pip ---
   - pip:
-    - voila==0.5.0
-    - voila-topbar==0.1.1
+      - voila==0.5.0
+      - voila-topbar==0.1.1
+      - lpips
+      - opencv-python
+      - timm
+      - tqdm
