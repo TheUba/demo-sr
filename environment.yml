@@ -3,23 +3,23 @@ channels:
   - conda-forge
 dependencies:
   # --- Core Python ---
-  - python=3.10
+  - python=3.12
   - pip
 
   # --- Jupyter / Voila ---
   - ipykernel
-  - ipywidgets=8.2.*
+  - ipywidgets=8.1.8
   - ipympl=0.9.2
   - jupyterlab-fasta
 
   # --- Ciencia de datos ---
   - pandas=2.2.3
   - numpy=2.2.6
-  - scipy
+  - scipy=1.16.3
   - matplotlib=3.10.3
   - seaborn=0.13.2
-  - networkx
-  - scikit-image
+  - networkx=3.5
+  - scikit-image=0.25.2
   - scikit-fuzzy=0.5.0
 
   # --- Visualizaciones interacticas ---
@@ -29,7 +29,7 @@ dependencies:
   - ipyvolume
 
   # --- Imagen / video ---
-  - imageio
+  - imageio==2.37.2
 
   # --- PyTorch (CPU) ---
   - pytorch
@@ -38,9 +38,9 @@ dependencies:
 
   # --- Instalar via pip ---
   - pip:
-      - voila==0.5.0
+      - voila==0.5.11
       - voila-topbar==0.1.1
-      - lpips
-      - opencv-python
-      - timm
-      - tqdm
+      - lpips==0.1.4
+      - opencv-python==4.12.0.88
+      - timm==1.0.22
+      - tqdm==4.67.1
