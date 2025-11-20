@@ -162,3 +162,5 @@ notebooks/model-repos/SwinIR/figs/
 
 # Evitar que los modelos se suban al repo
 notebooks/model/  # carpeta ignorada
+*.pt
+*.pth
