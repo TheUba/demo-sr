@@ -29,7 +29,7 @@ dependencies:
   - ipyvolume
 
   # --- Imagen / video ---
-  - imageio=2.37.2
+  - imageio
 
   # --- PyTorch (CPU) ---
   - pytorch
